@@ -23,7 +23,7 @@ My background is a **statistical geneticist** within R&D department. I have over
 
 ### Statistical Geneticist
 ![Image](https://www.cobb-vantress.com/assets/Uploads/eeea173a08/cobb-logo.png)   
-[Cobb-Vantress](https://www.cobb-vantress.com/) 2013 - Present 
+[Cobb-Vantress](https://www.cobb-vantress.com/) 2012 - Present 
 
    * Researching, adapting, and implementing cutting edge statistical genetics approaches for analysesand interpretation of large scale proprietary and publicly available genomic data.  
    * Data processing and conducting QC on large scale Next Generation Sequencing datasets.  
@@ -38,12 +38,6 @@ My background is a **statistical geneticist** within R&D department. I have over
    * Experience working with controlled access data from public repositories, such as a dbGaP and the UK BioBank  
    * Experience with Mendelian Randomization and/or multi-phenotype analyses.  
    * Experience operating in a large-scale, distributed computing environment  
-
-
-### Research Scientist
-![Image](https://www.cobb-vantress.com/assets/Uploads/eeea173a08/cobb-logo.png)   
-[Cobb-Vantress](https://www.cobb-vantress.com/) 2012 - 2013
-
    * Next Generation Sequencing Data Analysis for individual and pool sequencing data.  
    * RNA-seq data analysis.  
    * Imputation for genomic selection using 60K and 3K chip.  
