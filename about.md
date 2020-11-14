@@ -128,6 +128,6 @@ Bachelor’s Degree
 
 ### **Project List**
 
-   * D3 for Force-directed graph layout [documentation](https://github.com/chenjunonly/home/blob/main/_posts/2020-10-11-D3-for-Force-directed-graph-layout.html).  
+   * D3 for Force-directed graph layout [documentation](https://github.com/chenjunonly/home/blob/main/_posts/2020-11-02-Tidyverse-Cheat-Sheet.pdf).  
    * Regression project  
    * deep learing. 
