@@ -50,6 +50,8 @@ minima:
 header_pages:
  - about.md
  - project.md
+ - software.md
+ - interest.md
 
 # Build settings
 theme: minima
