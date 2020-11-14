@@ -78,7 +78,7 @@ and computation to specialists in biology, and medicine.
 
 ### Reseach Scientist  
 ![Image](vit.PNG)  
-[Vereinigte Informationssysteme Tierhaltung w.V. Geramny](https://www.vit.de/) 2011 - 2011 
+[Vereinigte Informationssysteme Tierhaltung w.V. Germany](https://www.vit.de/) 2011 - 2011 
 
 • A solid foundation in genomics or bioinformatics.  
 • Automate pipeline create.  
