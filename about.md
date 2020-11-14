@@ -101,8 +101,8 @@ and computation to specialists in biology, and medicine.
 
 ## **Education**
 ### [Georgia Institute of Technology](https://www.gatech.edu/)  
-![Image](https://img.pngio.com/logos-and-wordmarks-institute-communications-georgia-tech-georgia-tech-logo-png-456_215.png)
-Master's degree, Computational Data Analytics
+![Image](https://img.pngio.com/logos-and-wordmarks-institute-communications-georgia-tech-georgia-tech-logo-png-456_215.png)  
+Master's degree in Analytics, Computational Data Analytics
 2019 - 2021
 
 • Knowledge in Regression, Simulation, Timeseries Analysis, Analytic Models.  
