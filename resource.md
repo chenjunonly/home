@@ -12,7 +12,7 @@ permalink: /resource/
    
 ### Data open source
 
-   * kaggle(https://www.kaggle.com/)
+   * [kaggle](https://www.kaggle.com/)
    * [our world data](https://ourworldindata.org/)
    * [usfact.org](https://usafacts.org/)
    
