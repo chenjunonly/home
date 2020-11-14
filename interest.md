@@ -6,15 +6,13 @@ permalink: /interest/
 
 
 ## Personal Interest
-
-    * Hike
-	* Swimming
-	* Biking
+   * Hike
+   * Swimming
+   * Biking
 	
 ## Conference 
-
-    * ICQG
-    * ASHG
-    * Rstudio conference
-    * Anaconda conference	
+   * ICQG
+   * ASHG
+   * Rstudio conference
+   * Anaconda conference	
 	
