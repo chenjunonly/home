@@ -6,6 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 # https://simplpost.com/markdown.html
 layout: home
+title: Homepage
 ---
 
 ## Welcome to Jun Chen's Page  
