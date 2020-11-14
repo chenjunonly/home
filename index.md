@@ -8,11 +8,11 @@
 layout: home
 ---
 
-# Welcome to Jun Chen's Page  
+## Welcome to Jun Chen's Page  
 
 ![Image](image/Jun_Chen_photo.jpg)  
 
-## Data Scientist, Statistic Geneticist, bioinformatician.
+### Data Scientist, Statistic Geneticist, bioinformatician.
 
 *****
 
