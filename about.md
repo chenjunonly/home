@@ -101,7 +101,7 @@ and computation to specialists in biology, and medicine.
 
 ## **Education**
 ### [Georgia Institute of Technology](https://www.gatech.edu/)  
-![Image](https://brand.gatech.edu/sites/default/files/2020-08/gt-logo-gold.png){: width=20px}  
+![Image](https://brand.gatech.edu/sites/default/files/2020-08/gt-logo-gold.png =100x100)
 Master's degree, Computational Data Analytics
 2019 - 2021
 
