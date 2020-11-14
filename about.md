@@ -128,6 +128,6 @@ Bachelor’s Degree
 
 ### **Project List**
 
-* Machine learning [documentation](https://www.laowaicareer.com/images/company-logo/114/140/).  
+* D3 for Force-directed graph layout [documentation](https://github.com/chenjunonly/home/blob/main/_posts/2016-05-20-D3-for-Force-directed-graph-layout.html).  
 * Regression project  
 * deep learing. 
