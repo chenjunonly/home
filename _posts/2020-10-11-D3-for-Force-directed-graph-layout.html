@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="text/javascript" src="../lib/d3.v5.min.js"></script>
+<style>
+
+path.link {
+  fill: none;
+  stroke: grey;
+  stroke-width: 5px;
+}
+
+path.link2 {
+  fill: none;
+  stroke: green;
+  stroke-width: 1.5px;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #fff;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+text {
+  fill: #000;
+  font: 10px sans-serif;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+fixed {
+  fill: #f00;
+}
+
+circle2 {
+  fill: red;
+  stroke: #fff;
+  stroke: black;
+  stroke-width: 3px;
+}
+
+.doubled { fill: black !important; }
+
+</style>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Hull, Matthew D</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:Order msdt:dt="string">35500.0000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Hull, Matthew D</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100D48F87729E805A4096AD64C4E51DACBE</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head><body>
+<script>
+
+d3.dsv(",", "board_games.csv", function(d) {
+  return {
+    source: d.source,
+    target: d.target,
+    value: +d.value
+  }
+}).then(function(data) {
+
+  var links = data;
+
+  var nodes = {};
+
+  // compute the distinct nodes from the links.
+  links.forEach(function(link) {
+      link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+      link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+  });
+
+  var width = 1200,
+      height = 700;
+
+  var force = d3.forceSimulation()
+      .nodes(d3.values(nodes))
+      .force("link", d3.forceLink(links).distance(100))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force("x", d3.forceX())
+      .force("y", d3.forceY())
+      .force("charge", d3.forceManyBody().strength(-250))
+      .alphaTarget(1)
+      .on("tick", tick);
+
+  var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+<!-- var color = d3.scale.category20(); -->
+  // add the links
+  <!-- var path = svg.append("g") -->
+      <!-- .selectAll("path") -->
+      <!-- .data(links) -->
+      <!-- .enter() -->
+      <!-- .append("path") -->
+      <!-- .attr("class", function(d) { return "link " + d.type; }); -->
+
+  var path = svg.append("g")
+      .selectAll("path")
+      .data(links)
+      .enter()
+      .append("path")
+	  .style("stroke-dasharray", function(d) { 
+	  if(d.value ==0) {return "0"; }
+	  if(d.value ==1) {return "4,4"; }
+	  })
+      .attr("class", function(d) { 
+	  if(d.value ==0) {return "link " + d.type; }
+	  if(d.value ==1) {return "link2 " + d.type; }
+	  
+	  });
+	  
+	  
+  // define the nodes
+  var node = svg.selectAll(".node")
+      .data(force.nodes())
+      .enter().append("g")
+      .attr("class", "node")
+	  .on("dblclick", dblclick)
+      .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+		  <!-- .on("dblclick",dblclick)); -->
+		  <!-- .on("click", click)); -->
+	      <!-- .on("click",function(d){ return "fixed " + d.type; }) -->
+          <!-- .on("dblclick",function(d){ return "circle2 " + d.type; })); -->
+
+  // add the nodes
+  <!-- node.append("circle") -->
+      <!-- .attr("r", 5); -->
+
+
+  <!-- // Linear scale for degree centrality. -->
+  <!-- var degreeSize = d3.scaleLinear() -->
+  	<!-- .domain([d3.min(graph.nodes, function(d) {return d.degree; }),d3.max(graph.nodes, function(d) {return d.degree; })]) -->
+  	<!-- .range([8,25]); -->
+	
+	<!-- console.log(d.degree) -->
+	
+  <!-- node.append("circle") -->
+      <!-- .attr("r", 5); -->
+	  <!-- <!-- .style("fill",function(d){ return color(d.name);}); --> -->
+
+node.append("circle")
+   .attr("r", function(d) {      
+     d.weight = links.filter(function(l) {
+       return l.source.index == d.index || l.target.index == d.index
+     }).length;   
+<!-- console.log(d.weight);  -->
+     var minRadius = 10;
+     return minRadius + (d.weight * 2);
+<!-- var minValue=1; -->
+<!-- var maxValue=1; -->
+<!-- if(d.weight<minValue){return minValue=d.weight;} -->
+<!-- if(d.weight>maxValue){return maxValue=d.weight;} -->
+   })
+   .style("fill", function(d) {
+     d.weight = links.filter(function(l) {
+       return l.source.index == d.index || l.target.index == d.index
+     }).length;
+
+	if(d.weight ==10) {return "#8856a7"; }
+	if(d.weight ==1) {return "#e0ecf4"; } 
+	if(d.weight >1 && d.weight <10 ) {return "#9ebcda"; } 
+	<!-- if(d.weight ==d3.max(d.weight)) {return "#8856a7"; } -->
+	<!-- if(d.weight ==d3.min(d.weight)) {return "#e0ecf4"; }  -->
+	<!-- if(d.weight >d3.min(d.weight) && d.weight <d3.max(d.weight) ) {return "#9ebcda"; }  -->
+
+  });
+ <!-- console.log(minValue) -->
+ <!-- console.log(maxValue) -->
+
+   <!-- // Linear scale for degree centrality. -->
+  <!-- var degreeSize = d3.scaleLinear() -->
+  	<!-- .domain([d3.min(graph.nodes, function(d) {return d.degree; }),d3.max(graph.nodes, function(d) {return d.degree; })]) -->
+  	<!-- .range([8,25]); -->
+	<!-- console.log(d.degree) -->
+
+  node.append("text")
+    .attr("dx", 12)
+    .attr("dy", ".35em")
+    .text(function (d) { return d.name });
+
+
+  svg.append("text")
+        .attr("x", width-300)             
+        .attr("y", 100)
+        .attr("text-anchor", "right")  
+        .style("font-size", "15px") 
+        .text("");
+
+<!-- var drag = force.drag() -->
+    <!-- .on("dragstart", dragstarted); -->
+	
+  // add the curvy lines
+  function tick() {
+      path.attr("d", function(d) {
+          var dx = d.target.x - d.source.x,
+              dy = d.target.y - d.source.y,
+              dr = Math.sqrt(dx * dx + dy * dy);
+          return "M" +
+              d.source.x + "," +
+              d.source.y + "A" +
+              dr + "," + dr + " 0 0,1 " +
+              d.target.x + "," +
+              d.target.y;
+      });
+      node.attr("transform", function(d) {
+          return "translate(" + d.x + "," + d.y + ")"; 
+      });
+  };
+<!-- https://bl.ocks.org/d3noob/8043434 -->
+  function dragstarted(d) {
+
+         d3.select(this).classed("fixed", d.fixed = true);
+      if (!d3.event.active) force.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+	  
+	  <!-- node.append("circle") -->
+       <!-- .style("fill", function(d) {return "#e0ecf4"; }); -->
+	  
+    d3.select(this).select("circle").transition()
+        .duration(750)
+		.style("fill", "red")
+		.style('stroke-width', "5px");
+
+//        .attr("r", 16)
+		
+  <!-- }); -->
+	  
+  };
+  <!-- node.on("drag",function(d){ //some code} -->
+  function dragged(d) {
+ 
+      d.fx = d3.event.x;
+      d.fy = d3.event.y;
+  };
+
+
+  function dragended(d) {
+
+      if (!d3.event.active) force.alphaTarget(0);
+      if (d.fixed == true) {
+          d.fx = d.x;
+          d.fy = d.y;
+      }
+      else {
+          d.fx = null;
+          d.fy = null;
+      }
+  };
+  
+  
+  <!-- function click(event, d) { -->
+    <!-- delete d.fx; -->
+    <!-- delete d.fy; -->
+    <!-- d3.select(this).classed("fixed", false); -->
+    <!-- simulation.alpha(1).restart(); -->
+  <!-- } -->
+  
+  
+  <!-- function dblclick(d) { -->
+  <!-- d3.select(this).classed("fixed", d.fixed = false); -->
+<!-- } -->
+
+function dblclick(d) {
+   //d3.select(this).classed("fixed", d.fixed = false);
+   //d3.select(this).classed("fixed", d.fixed = true);
+         if (!d3.event.active) force.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+
+    d3.select(this).select("circle").transition()
+        .duration(750)
+   .style("fill", function(d) {
+     d.weight = links.filter(function(l) {
+       return l.source.index == d.index || l.target.index == d.index
+     }).length;
+
+	if(d.weight ==10) {return "#8856a7"; }
+	if(d.weight ==1) {return "#e0ecf4"; } 
+	if(d.weight >1 && d.weight <10 ) {return "#9ebcda"; }
+})
+.style('stroke-width', "1.5px"); 	
+	
+    <!-- d3.select(this).select("circle").transition() -->
+        <!-- .duration(750) -->
+        <!-- .attr("r", 6); -->
+    <!-- d3.select(this).select("text").transition() -->
+        <!-- .duration(750) -->
+        <!-- .attr("x", 12) -->
+        <!-- .style("stroke", "none") -->
+        <!-- .style("fill", "black") -->
+        <!-- .style("stroke", "none") -->
+        <!-- .style("font", "10px sans-serif"); -->
+}
+
+
+<!-- https://bl.ocks.org/mbostock/3750558 -->
+  
+}).catch(function(error) {
+  console.log(error);
+});
+
+</script>
+</body>
+</html>
