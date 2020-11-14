@@ -4,13 +4,11 @@ title: About
 permalink: /about/
 ---
 
-## Welcome to My Pages
+My background is a **statistical geneticist** within R&D department. I have over 11 years working on statisticalgenetics and bioinformatic areas. Where my responsibilities included Lead and direct activities that delivermolecular tools and genomic analyses to achieve genetic gains, competitive advantage and business objectives.Develop or utilize existing genomic tools and methods to improve genetic gain in pedigree; develop or utilizeexisting genomic tools and methods to improve selection in product pipeline; develop or utilize genome toolsand methods to understand genetic resources and relationships; identify genes and mutations associated withunderstand traits; implement genomic tools into the pedigree and product pipeline; provide ongoing requirementsfor the genomic R&D database; increase knowledge in genomic research.
 
-My background is a statistical geneticist within R&D department. I have over 11 years working on statisticalgenetics and bioinformatic areas. Where my responsibilities included Lead and direct activities that delivermolecular tools and genomic analyses to achieve genetic gains, competitive advantage and business objectives.Develop or utilize existing genomic tools and methods to improve genetic gain in pedigree; develop or utilizeexisting genomic tools and methods to improve selection in product pipeline; develop or utilize genome toolsand methods to understand genetic resources and relationships; identify genes and mutations associated withunderstand traits; implement genomic tools into the pedigree and product pipeline; provide ongoing requirementsfor the genomic R&D database; increase knowledge in genomic research.
+### **Research Interesting**:
 
-### Research Interesting:
-
-• Bioinformatics, Statistical computing, and statistical graphics.  
+• Bioinformatic, Statistical computing, and statistical graphics.  
 • Exploratory Data Analysis, in particularly of big Data analysis.  
 • Develop statistical method and program to analyze next generation sequence data sets and RNA-seq in humanand animal.  
 • Population genomic studies using high density SNP data, numerical and statistical methods with applications ingenomic selection.  
@@ -18,15 +16,14 @@ My background is a statistical geneticist within R&D department. I have over 11 
 • Whole genome annotation and pathway analyses.  
 • Data visualization, distributed computing technology and reproducible research.  
 • Cloud computing, version control, electronic notebooks and containerization technologies.  
-```markdown
-```
 
 
-## Experience
+
+## **Experience**
 
 ### Statistical Geneticist
-![Image](https://www.cobb-vantress.com/assets/Uploads/eeea173a08/cobb-logo.png)   [Cobb-Vantress](https://www.cobb-vantress.com/)   
-Oct 2013 - Present 
+![Image](https://www.cobb-vantress.com/assets/Uploads/eeea173a08/cobb-logo.png)   
+[Cobb-Vantress](https://www.cobb-vantress.com/) 2013 - Present 
 
 • Researching, adapting, and implementing cutting edge statistical genetics approaches for analysesand interpretation of large scale proprietary and publicly available genomic data.  
 • Data processing and conducting QC on large scale Next Generation Sequencing datasets.  
@@ -41,12 +38,11 @@ Oct 2013 - Present
 • Experience working with controlled access data from public repositories, such as a dbGaP and the UK BioBank  
 • Experience with Mendelian Randomization and/or multi-phenotype analyses.  
 • Experience operating in a large-scale, distributed computing environment  
-**Bold** and _Italic_ and `Code` text  
 
 
 ### Research Scientist
-![Image](https://www.cobb-vantress.com/assets/Uploads/eeea173a08/cobb-logo.png)   [Cobb-Vantress](https://www.cobb-vantress.com/)   
-Jun 2012 - Oct 2013 (1 year 5 months)
+![Image](https://www.cobb-vantress.com/assets/Uploads/eeea173a08/cobb-logo.png)   
+[Cobb-Vantress](https://www.cobb-vantress.com/) 2012 - 2013
 
 • Next Generation Sequencing Data Analysis for individual and pool sequencing data.  
 • RNA-seq data analysis.  
@@ -62,8 +58,8 @@ Jun 2012 - Oct 2013 (1 year 5 months)
 
 
 ### Postdoc
-![Image](https://communications.tulane.edu/sites/g/files/rdw811/f/wordmark2color.gif)[Tulane University, USA](https://tulane.edu/)   
-Mar 2011 - Jun 2012 (1 year 4 months)
+![Image](https://communications.tulane.edu/sites/g/files/rdw811/f/wordmark2color.gif)  
+[Tulane University, USA](https://tulane.edu/) 2011 - 2012 
 
 • Expertise with genome scale analyses with genotype or sequence data. Execute and interpret analyses of genome wide association analysis, with sequencing or genotyping data.  
 • Expertise in groundbreaking genomic analyses and their application to complex human and animal
@@ -81,9 +77,8 @@ and computation to specialists in biology, and medicine.
 
 
 ### Reseach Scientist  
-![Image](vit.PNG)[Vereinigte Informationssysteme Tierhaltung w.V. Geramny](https://www.vit.de/)  
-Vereinigte Informationssysteme Tierhaltung w.V. (VIT), Germany  
-Jan 2011 - Mar 2011 
+![Image](vit.PNG)  
+[Vereinigte Informationssysteme Tierhaltung w.V. Geramny](https://www.vit.de/) 2011 - 2011 
 
 • A solid foundation in genomics or bioinformatics.  
 • Automate pipeline create.  
@@ -93,10 +88,8 @@ Jan 2011 - Mar 2011
 • SAS, Fortran and Linux shell programming.  
 
 ### Postdoc
-![Image](https://enlight-eu.org/images/logos/Logo_Gttingen.jpg)[Goerg August University, Germany](https://www.uni-goettingen.de/en/1.html)  
-
-
-Sep 2009 - Mar 2011 (1 year 7 months)  
+![Image](https://enlight-eu.org/images/logos/Logo_Gttingen.jpg)  
+[Goerg August University, Germany](https://www.uni-goettingen.de/en/1.html) 2009 - 2011    
 
 • Genomic prediction models.  
 • Genomic selection methods comparison. such as Bayes, Machine learning, Mix models.  
@@ -104,14 +97,11 @@ Sep 2009 - Mar 2011 (1 year 7 months)
 • Simulation study in traditional model and genomic prediction model.  
 • R programming and visualization.  
 
-```markdown
-```
-
-## Education
-### [Georgia Institute of Technology](https://www.gatech.edu/)  
-![Image](https://brand.gatech.edu/sites/default/files/2020-08/gt-logo-gold.png)
 
 
+## **Education**
+### [Georgia Institute of Technology](https://www.gatech.edu/)    
+![Image](https://brand.gatech.edu/sites/default/files/2020-08/gt-logo-gold.png)  
 Master's degree, Computational Data Analytics
 2019 - 2021
 
@@ -125,23 +115,18 @@ Master's degree, Computational Data Analytics
 • Experience with version control, electronic notebooks (Jupyter or Rnotebook)  
 • Experience using containerization technologies (Docker) for reproducible  research  
 
-### [China Agricultural University](https://en.cau.edu.cn/)
-![Image](https://www.laowaicareer.com/images/company-logo/114/140)
-
+### [China Agricultural University](https://en.cau.edu.cn/)  
+![Image](https://www.laowaicareer.com/images/company-logo/114/140)  
 Doctor of Philosophy (PhD), Statistical Genetics
 2004 - 2009
 
-### [China Agricultural University](https://en.cau.edu.cn/)
-
-![Image](https://www.laowaicareer.com/images/company-logo/114/140)
-
+### [China Agricultural University](https://en.cau.edu.cn/)   
+![Image](https://www.laowaicareer.com/images/company-logo/114/140)  
 Bachelor’s Degree
 2000 - 2004
 
-```markdown
-```
 
-### Project List
+### **Project List**
 
 * Machine learning [documentation](https://www.laowaicareer.com/images/company-logo/114/140/).  
 * Regression project  
