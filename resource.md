@@ -20,7 +20,7 @@ permalink: /resource/
 
 ![Image](https://map1.maploco.com/visited-states/ml/AL-AR-AZ-CA-DC-DE-FL-GA-IA-IL-IN-KS-KY-LA-MA-MD-MN-MO-MS-NE-NJ-NY-OK-PA-TN-TX-WA.png")
    
-![Image](https://map1.maploco.com/visited-countries/ml/m67ic680hs-b3vmhuv2f4-b3ajtx2s5c-b33r633z7k-2rrvthoagw.gif)  
+![Image](https://map1.maploco.com/visited-countries/ml/m67ic680hs-b3vmhuv2f4-b3ajtx2s5c-b33rnudzpc-2rrvthoagw.gif)  
 
 
    
