@@ -52,6 +52,7 @@ header_pages:
  - project.md
  - software.md
  - interest.md
+ - resource.md
 
 # Build settings
 theme: minima
