@@ -15,7 +15,7 @@
 ### **Data Scientist**, ***Statistic Geneticist***, **Bioinformatician**.
 ## Welcome to **Jun Chen**'s Page  
 layout: home
-title: Homepage
+title:   
 ---
 
 
