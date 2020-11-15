@@ -14,7 +14,7 @@ title: Homepage
 ---
 
 ## Welcome to **Jun Chen**'s Page  
-<p align="center">
+<p align="left">
   <img width="266" height="296" src="image/Jun_Chen_photo.jpg">
 </p>
 ### **Data Scientist**, ***Statistic Geneticist***, **Bioinformatician**.
