@@ -22,7 +22,7 @@ title: Homepage
 <div align="center"><h1>Welcome to Jun Chen's Page.</h1></div>  
 
 <p align="center">
-  <img width="266" height="296" src="image/Jun_Chen_photo.jpg">
+  <img width="246" height="276" src="image/Jun_Chen_photo.jpg">
 </p>
 <div align="center"><h2>Data Scientist, Statistic Geneticist, Bioinformatician.</h2></div>
 
