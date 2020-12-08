@@ -34,11 +34,11 @@ The COVID-19 dataset is downloaded from _USAfacts.org_. The size of COVID-19 dat
 
 County and states data are downloaded from _USAfacts.org_ too. They are in geojson format and can be directly consume by Leaflet.
 
-![](RackMultipart20201208-4-1muudjt_html_b901146c5f435f36.png) ![](RackMultipart20201208-4-1muudjt_html_10eb3ee3ef5d849c.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_b901146c5f435f36.png) ![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_10eb3ee3ef5d849c.png)
 
 **Figure 1.** The trend for COVID-19 confirmed cases and the trend for airlines and cargo flights
 
-![](RackMultipart20201208-4-1muudjt_html_a82357cf9968b157.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_a82357cf9968b157.png)
 
 **Figure 2.** The regression trend between COVID-19 new cases and the number of flights by airlines in the US.
 
@@ -58,9 +58,9 @@ The total confirmed cases by county in Sep 24 which is the last day of our colle
 
 In our implementation, we ran the two classification algorithms against the data of last day and got two 8 level threshold sets. Then we map each threshold sets to red colors with different darkness level. This threshold mapping is used across the whole timeline.
 
-![](RackMultipart20201208-4-1muudjt_html_2fecc68f2c7c5740.png) ![](RackMultipart20201208-4-1muudjt_html_860dcc5a17161abe.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_2fecc68f2c7c5740.png) ![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_860dcc5a17161abe.png)
 
-![](RackMultipart20201208-4-1muudjt_html_9d07f89e6ffb48fd.png) ![](RackMultipart20201208-4-1muudjt_html_c5035493bfac613e.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_9d07f89e6ffb48fd.png) ![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_c5035493bfac613e.png)
 
 **Figure 3.** A set of sample visualizations of the final implementation. Top 2 images are from NB experiment group and bottom 2 images are from QN experiment group.
 
@@ -81,7 +81,7 @@ Table 1. Observed Percent Accuracy by Classification Method for Question Types
 
 Note: N is the number of responses for which percentages are calculated, e.g., n=261 is 29 subjects responding to 9 questions.
 
-![](RackMultipart20201208-4-1muudjt_html_463abd79fb60a52a.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_463abd79fb60a52a.png)
 
 **Figure 4.** The App satisfaction rate by classification methods in 3 questions.
 
@@ -163,53 +163,53 @@ Jiatang D, Yunjie L., Yarui L. and Shuai L. were responsible for report/slides/p
 
 **Appendix**
 
-![](RackMultipart20201208-4-1muudjt_html_ea0bfc1b7f22583b.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_ea0bfc1b7f22583b.png)
 
 **Figure 4.** The trend for the number of flights in the different continents (AF: Africa, AS: Asia, EU: Europe, NA: North America, OC: Oceania, SA: South America).
 
-![](RackMultipart20201208-4-1muudjt_html_e8f9702c18755a77.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_e8f9702c18755a77.png)
 
 **Figure 5.** The trend for the number of flights in the different countries (JP: Japan, GB: United Kingdom of Great Britain and Northern Ireland, US: United States of America, DE: Germany, AU: Australia, AE: United Arab Emirates).
 
-![](RackMultipart20201208-4-1muudjt_html_71fc3d8928ab3731.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_71fc3d8928ab3731.png)
 
 **Figure 6.** The trend for the number of flights in the different airports (KJFK: John F Kennedy International Airport, EGLL: London Heathrow Airport, EDDF: Frankfurt am Main Airport, OMDB: Dubai International Airport, YSSY: Sydney Kingsford Smith International Airport).
 
-![](RackMultipart20201208-4-1muudjt_html_9dfa0edb882db45e.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_9dfa0edb882db45e.png)
 
 **Figure 7.** The trend for the number of flights in the passenger airlines (DAL: DELTA, AAL: AMERICAN, UAL: UNITED, SWA: SOUTHWEST).
 
-![](RackMultipart20201208-4-1muudjt_html_80c2c2ffd25d8751.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_80c2c2ffd25d8751.png)
 
 **Figure 8.** The trend for the number of flights in the cargo airlines (UPS: UPS, FDX: FEDEX).
 
-![](RackMultipart20201208-4-1muudjt_html_41dbe10de0fbfff2.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_41dbe10de0fbfff2.png)
 
 **Figure 9.** The regression trend between COVID-19 new cases and the number of flights in the US.
 
-![](RackMultipart20201208-4-1muudjt_html_3787b2e98a55f7c2.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_3787b2e98a55f7c2.png)
 
 **Figure 10.** The regression trend between COVID-19 new cases and the number of flights by cargo airlines in the US.
 
-![](RackMultipart20201208-4-1muudjt_html_c1e7e86367636cb0.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_c1e7e86367636cb0.png)
 
-**Figure 11.** The comparison between 2019 April and 2020 April for the number of flights in the different continents (AF: Africa, AS: Asia, EU: Europe, NA: North America, OC: Oceania, SA: South America ![](RackMultipart20201208-4-1muudjt_html_1b1b1770b5c6af50.png)
+**Figure 11.** The comparison between 2019 April and 2020 April for the number of flights in the different continents (AF: Africa, AS: Asia, EU: Europe, NA: North America, OC: Oceania, SA: South America ![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_1b1b1770b5c6af50.png)
 
 **Figure 12.** The comparison between 2019 April and 2020 April in the different countries (JP: Japan, GB: United Kingdom of Great Britain and Northern Ireland, US: United States of America, DE: Germany, AU: Australia, AE: United Arab Emirates).
 
-![](RackMultipart20201208-4-1muudjt_html_a6e369472974afb9.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_a6e369472974afb9.png)
 
 **Figure 13.** The comparison between 2019 April and 2020 April in the different airports (KJFK: John F Kennedy International Airport, EGLL: London Heathrow Airport, EDDF: Frankfurt am Main Airport, OMDB: Dubai International Airport, YSSY: Sydney Kingsford Smith International Airport).
 
-![](RackMultipart20201208-4-1muudjt_html_8ccd4be262809ca.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_8ccd4be262809ca.png)
 
 **Figure 14.** The comparison between 2019 April and 2020 April for the number of flights in the passenger airlines (DAL: DELTA, AAL: AMERICAN, UAL: UNITED, SWA: SOUTHWEST).
 
-![](RackMultipart20201208-4-1muudjt_html_4b52e45a762155ee.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_4b52e45a762155ee.png)
 
 **Figure 15.** The comparison between 2019 April and 2020 April for the number of flights in the cargo airlines (UPS: UPS, FDX: FEDEX).
 
-![](RackMultipart20201208-4-1muudjt_html_9684d7d6b6f82839.png)
+![](2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_9684d7d6b6f82839.png)
 
 **Figure 15.** Distribution of total confirmed cases by county in 9/24/2020
 
