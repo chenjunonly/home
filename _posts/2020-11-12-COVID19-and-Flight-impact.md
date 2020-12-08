@@ -38,7 +38,7 @@ County and states data are downloaded from _USAfacts.org_ too. They are in geojs
 
 **Figure 1.** The trend for COVID-19 confirmed cases and the trend for airlines and cargo flights
 
-![](/2020-11-12-COVID19/RackMultipart20201208-4-1muudjt_html_a82357cf9968b157.png)
+![](RackMultipart20201208-4-1muudjt_html_a82357cf9968b157.png)
 
 **Figure 2.** The regression trend between COVID-19 new cases and the number of flights by airlines in the US.
 
